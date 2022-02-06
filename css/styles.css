@@ -21,6 +21,20 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .nolist {
   list-style: none;
 }
@@ -42,6 +56,8 @@ body {
 }
 
 /*Шапка*/
+.site-nav {
+}
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -56,6 +72,8 @@ body {
 }
 .site-nav .link.current {
   color: var(--accent-text-color);
+}
+.contacts-nav {
 }
 .contacts-nav a {
   color: var(--primary-text-color);
@@ -73,13 +91,16 @@ body {
 /*Герой*/
 .hero {
   background-color: var(--accent-bacground);
+  text-align: center;
 }
 .hero-tytle {
+  margin-bottom: 30px;
+
   color: var(--accent-title-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -87,19 +108,26 @@ body {
   cursor: pointer;
   font-family: inherit;
 }
-.primary {
+.button.primary {
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: transparent;
+
   color: var(--accent-title-color);
   background-color: var(--button-background);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  /* display: flex;*/
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
 
 /*Блок-Особенности*/
+.feature {
+}
 .feature-title {
   color: var(--title-text-color);
 }
@@ -112,6 +140,8 @@ body {
 }
 
 /*Блок-Чем мы занимаемся*/
+.work {
+}
 .work-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -193,4 +223,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
