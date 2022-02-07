@@ -56,9 +56,24 @@ h6 {
 }
 
 /*Шапка*/
+.nav-box {
+  display: flex;
+  align-items: center;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
+  display: flex;
+  margin-left: 93px;
 }
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -73,9 +88,18 @@ h6 {
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
-.contacts-nav {
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
-.contacts-nav a {
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -86,6 +110,9 @@ h6 {
 .contacts-nav a:hover,
 .contacts-nav a:focus {
   color: var(--accent-text-color);
+}
+.contacts-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /*Герой*/
@@ -107,6 +134,8 @@ h6 {
 .button {
   cursor: pointer;
   font-family: inherit;
+  border-radius: 4px;
+  border: transparent;
 }
 .button.primary {
   min-width: 200px;
@@ -176,6 +205,9 @@ h6 {
 }
 /*Подвал*/
 .bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--accent-bacground);
   font-size: 14px;
   line-height: 1.71;
@@ -196,7 +228,9 @@ h6 {
 }
 
 /*Портфолио*/
-.secondary {
+.button.secondary {
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background-color: var(--accent-two-background);
   font-weight: 500;
@@ -228,4 +262,8 @@ h6 {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
