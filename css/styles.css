@@ -6,6 +6,7 @@
   --accent-text-color: #2196f3;
   --accent-one-color: #000000;
   --accent-two-color: rgba(255, 255, 255, 0.6);
+  --box-color: #ececec;
   /*Фон*/
   --primary-bacground: #ffffff;
   --accent-bacground: #2f303a;
@@ -56,6 +57,11 @@ h6 {
 }
 
 /*Шапка*/
+.box {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--box-color);
+}
 .nav-box {
   display: flex;
   align-items: center;
@@ -117,6 +123,8 @@ h6 {
 
 /*Герой*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--accent-bacground);
   text-align: center;
 }
@@ -161,6 +169,9 @@ h6 {
 .feature-list .item + .item {
   margin-left: 30px;
 }
+.feature-list .item {
+  width: 270px;
+}
 .feature-title {
   color: var(--title-text-color);
 }
@@ -176,8 +187,16 @@ h6 {
 
 /*Блок-Чем мы занимаемся*/
 .work {
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+}
+.work-list .foto + .foto {
+  margin-left: 30px;
 }
 .work-title {
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -190,6 +209,7 @@ h6 {
   background-color: var(--accent-two-background);
 }
 .team-title {
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -198,16 +218,30 @@ h6 {
 }
 
 .team-item {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+.team-list {
+  display: flex;
+}
 .team-list .text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+.card {
+  background-color: var(--accent-title-color);
+}
+.team-list .card + .card {
+  margin-left: 30px;
+}
+.text {
+  margin-bottom: 30px;
 }
 /*Подвал*/
 .bottom {
