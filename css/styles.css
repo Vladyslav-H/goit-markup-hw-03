@@ -7,6 +7,7 @@
   --accent-one-color: #000000;
   --accent-two-color: rgba(255, 255, 255, 0.6);
   --box-color: #ececec;
+  --portfolio-box-color: #eeeeee;
   /*Фон*/
   --primary-bacground: #ffffff;
   --accent-bacground: #2f303a;
@@ -156,7 +157,6 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex;*/
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -279,6 +279,14 @@ h6 {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.filters {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filters .push + .push {
+  margin-left: 8px;
+}
 .filters button:hover,
 .filters button:focus {
   background-color: var(--accent-text-color);
@@ -287,9 +295,30 @@ h6 {
 .portfolio-title {
   color: var(--title-text-color);
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-element {
+  border: 1px solid var(--portfolio-box-color);
+  box-sizing: border-box;
+  width: 370px;
+}
+.flex-element:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.flex-element:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
 .portfolio-list .desc {
   font-size: 16px;
   line-height: 1.87;
+}
+.portfolio-text {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .portfolio-item {
   color: var(--title-text-color);
@@ -302,6 +331,8 @@ h6 {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   padding-top: 94px;
