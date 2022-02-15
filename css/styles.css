@@ -189,6 +189,7 @@ h6 {
   color: var(--title-text-color);
 }
 .feature-item {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -273,7 +274,7 @@ h6 {
 .address-item {
   color: var(--accent-title-color);
 }
-.contacts-bottom {
+.bottom-addr {
   margin-top: 20px;
 }
 .contacts-bottom a:hover,
