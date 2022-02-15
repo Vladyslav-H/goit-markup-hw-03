@@ -56,7 +56,20 @@ h6 {
   line-height: 1.19;
   text-decoration: none;
 }
-
+.image {
+  display: block;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*Шапка*/
 .box {
   border-bottom-width: 1px;
@@ -176,8 +189,6 @@ h6 {
   color: var(--title-text-color);
 }
 .feature-item {
-  margin-bottom: 10px;
-
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -218,7 +229,6 @@ h6 {
 }
 
 .team-item {
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -240,9 +250,14 @@ h6 {
 .team-list .card + .card {
   margin-left: 30px;
 }
-.text {
-  margin-bottom: 30px;
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+.team-text .desc {
+  text-align: center;
+}
+
 /*Подвал*/
 .bottom {
   padding-top: 60px;
@@ -257,6 +272,9 @@ h6 {
 }
 .address-item {
   color: var(--accent-title-color);
+}
+.contacts-bottom {
+  margin-top: 20px;
 }
 .contacts-bottom a:hover,
 .contacts-bottom a:focus {
@@ -300,7 +318,6 @@ h6 {
   flex-wrap: wrap;
 }
 .flex-element {
-  box-sizing: border-box;
   width: 370px;
 }
 .flex-element:not(:nth-child(3n)) {
@@ -309,16 +326,12 @@ h6 {
 .flex-element:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.image {
-  display: block;
-}
+
 .portfolio-list .desc {
   font-size: 16px;
   line-height: 1.87;
 }
 .portfolio-text {
-  width: 370px;
-  height: 110px;
   border: 1px solid var(--portfolio-box-color);
   border-top-style: none;
 
@@ -334,14 +347,6 @@ h6 {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.portfolio-text .desc {
+  margin-top: 4px;
 }
